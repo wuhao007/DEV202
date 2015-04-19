@@ -3,25 +3,25 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "webSiteName": {
-            "value": null
+            "value": "fixittest"
         },
         "webSiteHostingPlanName": {
-            "value": null
+            "value": "fixithost"
         },
         "webSiteLocation": {
-            "value": null
+            "value": "West US"
         },
         "sqlServerName": {
-            "value": null
+            "value": "fixitserver"
         },
         "sqlServerLocation": {
-            "value": null
+            "value": "West US"
         },
         "sqlServerAdminLogin": {
-            "value": null
+            "value": "haowu"
         },
         "sqlDbName": {
-            "value": null
+            "value": "fixitdb"
         }
     }
 }

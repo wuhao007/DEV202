@@ -54,7 +54,11 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MyAzureCloudApp\MyAzureCloudApp.csproj" />
+    <ProjectReference Include="..\MyAzureCloudApp\MyAzureCloudApp.csproj">
+      <Targets>Build;Package</Targets>
+      <AdditionalProperties>PackageLocation=..\MyAzureCloudApp.Deployment\$(ProjectReferencesOutputPath)\MyAzureCloudApp\package.zip</AdditionalProperties>
+      <IncludeFilePath>$(ProjectReferencesOutputPath)\MyAzureCloudApp\package.zip</IncludeFilePath>
+    </ProjectReference>
   </ItemGroup>
   <Target Name="GetReferenceAssemblyPaths" />
 </Project>
